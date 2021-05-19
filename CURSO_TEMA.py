@@ -13,3 +13,6 @@ class CursoTema:
         f=open("cursotema.txt")
         print(f.read())
         f.close()
+    def ConsultarID(cls):
+        preg=input("Escribe el id que quieres buscar: ")
+        bloc=open("cursotema.txt")
