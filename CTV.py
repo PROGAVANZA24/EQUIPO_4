@@ -16,4 +16,8 @@ class CursoTemaVideo:
     def ConsultarTodo(cls):
         preg=input("Escribe el id que quieres buscar: ")
         bloc=open("cursotemavideo.txt")
-        
+        for formato in bloc:
+            datos=formato.strip().split("|")
+            if datos[0]==preg:
+                print(datos)
+        bloc.close()
