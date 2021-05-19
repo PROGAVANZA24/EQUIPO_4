@@ -9,3 +9,7 @@ class CursoTema:
         f.write (str(self.__id_curso))
         f.write(str(self.__id_tema))
         f.close(None)
+    def ConsultarTodo(cls):
+        f=open("cursotema.txt")
+        print(f.read())
+        f.close()
