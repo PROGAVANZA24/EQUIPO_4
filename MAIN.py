@@ -11,6 +11,9 @@ def op_administrar():
             return acc
         elif acc == 4:
             exit()
+        else:
+            print("*"*60)
+            print("Opción invalida.")
         
 #Menú administrador
 opcion = 0
