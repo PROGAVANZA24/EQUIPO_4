@@ -3,3 +3,6 @@ class empleados:
         self.__id_empleado = id_empleado
         self.__nom = nom 
         self.__dir = dir
+
+        def datosemp(self):
+
