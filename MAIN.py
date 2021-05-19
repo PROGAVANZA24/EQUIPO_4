@@ -1,3 +1,13 @@
+def op_administrar():
+    acc = 0
+    while acc < 1 or acc > 3:
+        print("*"*26+"ACCIÓN A ADMINISTRAR"+"*"*26)
+        print("1. Ingresar datos")
+        print("2. Revisar todos los datos")
+        print("3. Consultar por ID")
+        print("4. Salir")
+        acc = int(input("Ingrese una opción para administrar: "))
+        
 #Menú administrador
 opcion = 0
 while opcion < 1 or opcion > 6:    
