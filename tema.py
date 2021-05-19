@@ -14,7 +14,7 @@ class tema:
     def ConsultaID(cls):
         preg=input("Escribe el id que quieres buscar: ")
         bloc=open("tema.txt") 
-    for formato in bloc:
+        for formato in bloc:
             datos=formato.strip().split("|")
             if datos[0]==preg:
                 print(datos)
