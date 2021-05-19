@@ -10,4 +10,7 @@ class tema:
     def ConsultarTodo(cls):
         f=open("tema.txt")
         print(f.read())
-        f.close() 
+        f.close()
+    def ConsultaID(cls):
+        preg=input("Escribe el id que quieres buscar: ")
+        bloc=open("tema.txt")  
