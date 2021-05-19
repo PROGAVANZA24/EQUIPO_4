@@ -4,3 +4,10 @@ class video:
         self.__nom=nom
         self.__url=url
         self.__publi=publi
+    def guardar(self):
+        f=open("video.txt")
+        f.write (str(self.__id_video))
+        f.write (str(self.__nom))
+        f.write(str(self.__url))
+        f.write(str(self.__publi))
+        f.close(None)
