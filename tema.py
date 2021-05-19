@@ -6,4 +6,8 @@ class tema:
         f=open("tema.txt")
         f.write (str(self.__id_tema))
         f.write (str(self.__nom))
-        f.close(None) 
+        f.close(None)
+    def ConsultarTodo(cls):
+        f=open("tema.txt")
+        print(f.read())
+        f.close()
