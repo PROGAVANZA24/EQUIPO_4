@@ -11,3 +11,7 @@ class video:
         f.write(str(self.__url))
         f.write(str(self.__publi))
         f.close(None)
+    def ConsularTodo(cls):
+        f=open("video.txt")
+        print(f.read())
+        f.close()
