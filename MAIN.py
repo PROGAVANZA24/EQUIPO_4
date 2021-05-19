@@ -7,6 +7,10 @@ def op_administrar():
         print("3. Consultar por ID")
         print("4. Salir")
         acc = int(input("Ingrese una opción para administrar: "))
+        if acc >= 1 or acc <= 3:
+            return acc
+        elif acc == 4:
+            exit()
         
 #Menú administrador
 opcion = 0
