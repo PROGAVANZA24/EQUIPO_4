@@ -14,3 +14,6 @@ class curso:
         bloc=open("c:\\Users\\victo\\Desktop\\ArchivosDeTexto\\curso.txt")
         print(bloc.read())
         bloc.close()
+    def ConsultaID(cls):
+            preg=input("Escribe el id que quieres buscar: ")
+            bloc=open("c:\\Users\\victo\\Desktop\\ArchivosDeTexto\\cursos.txt")
