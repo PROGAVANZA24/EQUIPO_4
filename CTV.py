@@ -13,4 +13,7 @@ class CursoTemaVideo:
         f=open("cursotemavideo.txt")
         print(f.read())
         f.close()
-    
+    def ConsultarTodo(cls):
+        preg=input("Escribe el id que quieres buscar: ")
+        bloc=open("cursotemavideo.txt")
+        
