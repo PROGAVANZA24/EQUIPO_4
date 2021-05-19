@@ -9,4 +9,8 @@ class CursoTemaVideo:
         f.write (str(self.__id_cursotemvid))
         f.write(str(self.__id_video))
         f.close(None)
+    def guardar(cls):
+        f=open("cursotemavideo.txt")
+        print(f.read())
+        f.close()
     
