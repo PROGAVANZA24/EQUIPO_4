@@ -13,4 +13,8 @@ class empleados:
             bloc=open("c:\\Users\\victo\\Desktop\\ArchivosDeTexto\\empleados.txt")
             print(bloc.read())
             bloc.close()
+        def ConsultaID(cls):
+            preg=input("Escribe el id que quieres buscar: ")
+            bloc=open("c:\\Users\\victo\\Desktop\\ArchivosDeTexto\\empleados.txt")
+
         
