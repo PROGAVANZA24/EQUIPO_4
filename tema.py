@@ -2,3 +2,8 @@ class tema:
     def _init_(self, id_tema, nom):
         self.__id_tema=id_tema
         self.__nom=nom 
+    def guardar(self):
+        f=open("tema.txt")
+        f.write (str(self.__id_tema))
+        f.write (str(self.__nom))
+        f.close(None) 
