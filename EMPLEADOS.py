@@ -7,7 +7,7 @@ class empleados:
             f=open("empleados.txt", "w")
             f.write(f'{str(self.__id_empleado)} | {str(self.__nom)} | {str(self.__dir)}')
             f.close()
-        def ConsultarTodo(cls):
+        def ConsultarTodo():
             bloc=open("empleados.txt", "r")
             print(bloc.read())
             bloc.close()
