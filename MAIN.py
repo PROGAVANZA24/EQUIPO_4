@@ -86,3 +86,8 @@ while opcion < 1 or opcion > 6:
             video.ConsularTodo()
         if accion == 3: #Consultar por ID
             video.ConsultaID()
+    elif opcion == 5: #Curso tema
+        if accion == 1: #Guardar datos
+            idCursoTema = input("Ingresa la id del tema asignado al curso: ")
+            idCurso = input("Ingresa la id del curso: ")
+            idTema = input("Ingresa la id del tema: ")
