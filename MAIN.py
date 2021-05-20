@@ -91,3 +91,6 @@ while opcion < 1 or opcion > 6:
             idCursoTema = input("Ingresa la id del tema asignado al curso: ")
             idCurso = input("Ingresa la id del curso: ")
             idTema = input("Ingresa la id del tema: ")
+            data = CursoTema(idCursoTema, idCurso, idTema)
+            data.guardar()
+            print("Asignación de tema al curso añadida a la base de datos.")
