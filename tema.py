@@ -3,10 +3,9 @@ class tema:
         self.__id_tema=id_tema
         self.__nom=nom 
     def guardar(self):
-        f=open("tema.txt")
-        f.write (str(self.__id_tema))
-        f.write (str(self.__nom))
-        f.close(None) 
+        f=open("tema.txt", "w")
+        f.write(f'{str(self.__id_tema)} | {str(self.__nom)}')
+        f.close() 
     def ConsultarTodo(cls):
         f=open("tema.txt")
         print(f.read())
