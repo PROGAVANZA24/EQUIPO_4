@@ -106,3 +106,6 @@ while opcion < 1 or opcion > 6:
             idVideo = input("Ingresa la id del video: ")
             data = CursoTemaVideo(idCursoTemaVideo, idCursoTema, idVideo)
             data.guardar()
+            print("Asignación de video al tema añadida a la base de datos.")
+        if accion == 2: #Consultar todo
+            print("ID Tema del curso | ID Video asignado al tema | ID Video")
