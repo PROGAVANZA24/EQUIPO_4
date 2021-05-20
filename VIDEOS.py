@@ -16,7 +16,7 @@ class video:
         preg=input("Escribe el id que quieres buscar: ")
         bloc=open("videos.txt", "r")
         for formato in bloc:
-            datos=formato.strip().split("|")
+            datos=formato.strip().split(" | ")
             if datos[0]==preg:
-                print(datos)
+                print(f'ID Video: {datos[0]} | Nombre: {datos[1]} | URL: {datos[2]} | Fecha publicación: {datos[3]}')
         bloc.close()
