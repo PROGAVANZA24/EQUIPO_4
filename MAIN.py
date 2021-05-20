@@ -72,3 +72,11 @@ while opcion < 1 or opcion > 6:
             TEMA.ConsultarTodo()
         if accion == 3: #Consultar por ID
             TEMA.ConsultaID()
+    elif opcion == 4: #Videos
+        if accion == 1: #Guardar datos
+            id = input("Ingresa la ID del video: ")
+            nombre = input("Ingresa el nombre del video: ")
+            url = input("Ingresa la URL del video: ")
+            publi = input("Ingresa la fecha de publicación del video: ")
+            data = video(id, nombre, url, publi)
+            data.guardar()
