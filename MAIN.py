@@ -3,7 +3,7 @@ from CURSO_TEMA import CursoTema
 from CURSO import curso
 from EMPLEADOS import empleados
 from VIDEOS import video
-from tema import tema
+from tema import TEMA
 
 def op_administrar():
     acc = 0
@@ -62,7 +62,8 @@ while opcion < 1 or opcion > 6:
         if accion == 1: #Guardar datos
             id = input("Ingresa la id del tema: ")
             nombre = input("Ingresa el nombre del tema: ")
-            data = tema(id, nombre)
+            data = TEMA(id, nombre)
             data.guardar()
         if accion == 2: #Consultar todo
             print("ID Tema | Nombre")
+            TEMA.ConsultarTodo
