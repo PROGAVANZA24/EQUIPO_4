@@ -58,3 +58,8 @@ while opcion < 1 or opcion > 6:
             curso.ConsultarTodo()
         if accion == 3: #Consultar por ID
             curso.ConsultaID()
+    elif opcion == 3: #Temas
+        if accion == 1: #Guardar datos
+            id = input("Ingresa la id del tema: ")
+            nombre = input("Ingresa el nombre del tema: ")
+            data = tema(id, nombre)
