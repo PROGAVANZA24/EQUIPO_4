@@ -4,11 +4,12 @@ class CursoTema:
         self.__id_curso=id_curso
         self.__id_tema=id_tema
     def guardar(self):
-        f=open("cursotema.txt")
+        f=open("cursotema.txt", "w")
         f.write (str(self.__id_cursotem))
         f.write (str(self.__id_curso))
         f.write(str(self.__id_tema))
-        f.close(None)
+        f.write(f'{str(self.__id_cursotem)} | {str(self.__id_curso)} | {str(self.__id_tema)}')
+        f.close()
     def ConsultarTodo(cls):
         f=open("cursotema.txt")
         print(f.read())
