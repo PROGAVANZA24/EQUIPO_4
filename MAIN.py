@@ -1,3 +1,10 @@
+from CTV import CursoTemaVideo
+from CURSO_TEMA import CursoTema
+from CURSO import curso
+from EMPLEADOS import empleados
+from VIDEOS import video
+from tema import tema
+
 def op_administrar():
     acc = 0
     while acc < 1 or acc > 3:
