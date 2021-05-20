@@ -41,6 +41,7 @@ while opcion < 1 or opcion > 6:
             dir = input("Ingresa la dirección del empleado: ")
             data = empleados(id, nombre, dir)
             data.guardar()
+            print("Empleados añadido a la base de datos.")
         if accion == 2: #Consultar todo
             print("ID | Nombre | Dirección")
             empleados.ConsultarTodo()
@@ -53,6 +54,7 @@ while opcion < 1 or opcion > 6:
             ide = input("Ingresa la empleado del empleado: ")
             data = curso(id, desc, ide)
             data.guardar()
+            print("Curso añadido a la base de datos.")
         if accion == 2: #Consultar todo
             print("ID Curso | Descripción | ID Empleado")
             curso.ConsultarTodo()
@@ -64,6 +66,7 @@ while opcion < 1 or opcion > 6:
             nombre = input("Ingresa el nombre del tema: ")
             data = TEMA(id, nombre)
             data.guardar()
+            print("Tema añadido a la base de datos.")
         if accion == 2: #Consultar todo
             print("ID Tema | Nombre")
             TEMA.ConsultarTodo
