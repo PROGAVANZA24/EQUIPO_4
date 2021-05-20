@@ -5,8 +5,8 @@ class curso:
         self.__desc=desc 
         self.__id_emp=id_emp
     def guardar(self):
-        f=open("cursos.txt", "w")
-        f.write(f'{str(self.__id_curso)} | {str(self.__desc)} | {str(self.__id_emp)}')
+        f=open("cursos.txt", "a")
+        f.write(f'{str(self.__id_curso)} | {str(self.__desc)} | {str(self.__id_emp)}\n')
         f.close()
     def ConsultarTodo():
         bloc=open("cursos.txt", "r")
