@@ -16,7 +16,7 @@ class curso:
             preg=input("Escribe el id que quieres buscar: ")
             bloc=open("cursos.txt", "r")
             for formato in bloc:
-                datos=formato.strip().split("|")
+                datos=formato.strip().split(" | ")
                 if datos[0]==preg:
-                    print(datos)
+                    print(f'ID Curso: {datos[0]} | Descripción: {datos[1]} | ID Empleado: {datos[2]}')
             bloc.close()
