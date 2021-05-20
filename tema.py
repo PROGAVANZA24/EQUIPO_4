@@ -3,8 +3,8 @@ class TEMA:
         self.__id_tema=id_tema
         self.__nom=nom 
     def guardar(self):
-        f=open("temas.txt", "w")
-        f.write(f'{str(self.__id_tema)} | {str(self.__nom)}')
+        f=open("temas.txt", "a")
+        f.write(f'{str(self.__id_tema)} | {str(self.__nom)}\n')
         f.close() 
     def ConsultarTodo():
         f=open("temas.txt", "r")
