@@ -94,3 +94,9 @@ while opcion < 1 or opcion > 6:
             data = CursoTema(idCursoTema, idCurso, idTema)
             data.guardar()
             print("Asignación de tema al curso añadida a la base de datos.")
+        if accion == 2: #Consultar todo
+            print("ID Tema asignado | ID Curso | ID Tema")
+            CursoTema.ConsultarTodo()
+        if accion == 3: #Cconsultar por ID
+            CursoTema.ConsultarID()
+        
