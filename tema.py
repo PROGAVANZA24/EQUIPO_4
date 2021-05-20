@@ -6,15 +6,15 @@ class TEMA:
         f=open("temas.txt", "w")
         f.write(f'{str(self.__id_tema)} | {str(self.__nom)}')
         f.close() 
-    def ConsultarTodo(cls):
+    def ConsultarTodo():
         f=open("temas.txt", "r")
         print(f.read())
         f.close()
-    def ConsultaID(cls):
+    def ConsultaID():
         preg=input("Escribe el id que quieres buscar: ")
         bloc=open("temas.txt", "r")  
         for formato in bloc:
-            datos=formato.strip().split("|")
+            datos=formato.strip().split(" | ")
             if datos[0]==preg:
-                print(datos)
+                print(f'ID Tema: {datos[0]} | Nombre: {datos[1]}')
         bloc.close() 
