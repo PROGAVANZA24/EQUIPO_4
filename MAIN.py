@@ -69,4 +69,6 @@ while opcion < 1 or opcion > 6:
             print("Tema añadido a la base de datos.")
         if accion == 2: #Consultar todo
             print("ID Tema | Nombre")
-            TEMA.ConsultarTodo
+            TEMA.ConsultarTodo()
+        if accion == 3: #Consultar por ID
+            TEMA.ConsultaID()
