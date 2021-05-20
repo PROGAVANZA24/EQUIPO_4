@@ -99,4 +99,10 @@ while opcion < 1 or opcion > 6:
             CursoTema.ConsultarTodo()
         if accion == 3: #Cconsultar por ID
             CursoTema.ConsultarID()
-        
+    elif opcion == 6: #Curso tema video
+        if accion == 1: #Guardar datos
+            idCursoTemaVideo = input("Ingresa la id del video asignado al tema: ")
+            idCursoTema = input("Ingresa la id del tema: ")
+            idVideo = input("Ingresa la id del video: ")
+            data = CursoTemaVideo(idCursoTemaVideo, idCursoTema, idVideo)
+            data.guardar()
