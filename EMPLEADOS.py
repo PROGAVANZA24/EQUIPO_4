@@ -17,6 +17,6 @@ class empleados:
             for formato in bloc:
                 datos=formato.strip().split(" | ")
                 if datos[0]==preg:
-                    print(f'ID: {datos[0]}\nNombre: {datos[1]}\nDirección: {datos[2]}')
+                    print(f'ID: {datos[0]} | Nombre: {datos[1]} | Dirección: {datos[2]}')
             bloc.close()
         
