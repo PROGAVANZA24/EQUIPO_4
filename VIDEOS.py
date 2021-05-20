@@ -5,8 +5,8 @@ class video:
         self.__url=url
         self.__publi=publi
     def guardar(self):
-        f=open("videos.txt", "w")
-        f.write(f'{str(self.__id_video)} | {str(self.__nom)} | {str(self.__url)} | {str(self.__publi)}')
+        f=open("videos.txt", "a")
+        f.write(f'{str(self.__id_video)} | {str(self.__nom)} | {str(self.__url)} | {str(self.__publi)}\n')
         f.close()
     def ConsularTodo():
         f=open("videos.txt", "r")
