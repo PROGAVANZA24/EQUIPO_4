@@ -82,5 +82,7 @@ while opcion < 1 or opcion > 6:
             data.guardar()
             print("Video añadido a la base de datos.")
         if accion == 2: #Consultar todo
-            print("ID Video | Nombre")
+            print("ID Video | Nombre | URL | Fecha de publicación")
             video.ConsularTodo()
+        if accion == 3: #Consultar por ID
+            video.ConsultaID()
