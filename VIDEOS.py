@@ -1,5 +1,5 @@
 class video:
-    def _init_(self, id_video, nom,url,publi):
+    def __init__(self, id_video, nom,url,publi):
         self.__id_video=id_video
         self.__nom=nom
         self.__url=url
@@ -8,13 +8,13 @@ class video:
         f=open("videos.txt", "w")
         f.write(f'{str(self.__id_video)} | {str(self.__nom)} | {str(self.__url)} | {str(self.__publi)}')
         f.close()
-    def ConsularTodo(cls):
-        f=open("video.txt")
+    def ConsularTodo():
+        f=open("videos.txt", "r")
         print(f.read())
         f.close()
-    def ConsultaID(cls):
+    def ConsultaID():
         preg=input("Escribe el id que quieres buscar: ")
-        bloc=open("tema.txt")
+        bloc=open("videos.txt", "r")
         for formato in bloc:
             datos=formato.strip().split("|")
             if datos[0]==preg:
