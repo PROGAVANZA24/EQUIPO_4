@@ -35,8 +35,9 @@ while opcion < 1 or opcion > 6:
     opcion = int(input("Ingrese opción por administrar: "))
     accion = op_administrar()
     if opcion == 1: #Empleados
-        if accion = 1: #Guardar datos
+        if accion == 1: #Guardar datos
             id = input("Ingresa la id del empleado: ")
             nombre = input("Ingresa el nombre del empleado: ")
             dir = input("Ingresa la dirección del empleado: ")
-            
+            data = empleados(id, nombre, dir)
+            data.guardar()
