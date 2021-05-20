@@ -32,9 +32,10 @@ while opcion < 1 or opcion > 6:
     print("4. Videos")
     print("5. Curso tema")
     print("6. Curso tema video")
+    print("7. Salir")
     opcion = int(input("Ingrese opción por administrar: "))
-    accion = op_administrar()
     if opcion == 1: #Empleados
+        accion = op_administrar()
         if accion == 1: #Guardar datos
             id = input("Ingresa la id del empleado: ")
             nombre = input("Ingresa el nombre del empleado: ")
@@ -48,6 +49,7 @@ while opcion < 1 or opcion > 6:
         if accion == 3: #Consultar por ID
             empleados.ConsultaID()
     elif opcion == 2: #Cursos
+        accion = op_administrar()
         if accion == 1: #Guardar datos
             id = input("Ingresa la id del curso: ")
             desc = input("Ingresa la descripción del curso: ")
@@ -61,6 +63,7 @@ while opcion < 1 or opcion > 6:
         if accion == 3: #Consultar por ID
             curso.ConsultaID()
     elif opcion == 3: #Temas
+        accion = op_administrar()
         if accion == 1: #Guardar datos
             id = input("Ingresa la id del tema: ")
             nombre = input("Ingresa el nombre del tema: ")
@@ -73,6 +76,7 @@ while opcion < 1 or opcion > 6:
         if accion == 3: #Consultar por ID
             TEMA.ConsultaID()
     elif opcion == 4: #Videos
+        accion = op_administrar()
         if accion == 1: #Guardar datos
             id = input("Ingresa la ID del video: ")
             nombre = input("Ingresa el nombre del video: ")
@@ -87,6 +91,7 @@ while opcion < 1 or opcion > 6:
         if accion == 3: #Consultar por ID
             video.ConsultaID()
     elif opcion == 5: #Curso tema
+        accion = op_administrar()
         if accion == 1: #Guardar datos
             idCursoTema = input("Ingresa la id del tema asignado al curso: ")
             idCurso = input("Ingresa la id del curso: ")
@@ -100,6 +105,7 @@ while opcion < 1 or opcion > 6:
         if accion == 3: #Cconsultar por ID
             CursoTema.ConsultarID()
     elif opcion == 6: #Curso tema video
+        accion = op_administrar()
         if accion == 1: #Guardar datos
             idCursoTemaVideo = input("Ingresa la id del video asignado al tema: ")
             idCursoTema = input("Ingresa la id del tema: ")
@@ -109,3 +115,10 @@ while opcion < 1 or opcion > 6:
             print("Asignación de video al tema añadida a la base de datos.")
         if accion == 2: #Consultar todo
             print("ID Tema del curso | ID Video asignado al tema | ID Video")
+            CursoTemaVideo.ConsultarTodo()
+        if accion == 3: #Consultar por ID
+            CursoTemaVideo.ConsultarID()
+    elif opcion == 7: #Salir
+        exit()
+    else:
+        print("Selección inválida")
