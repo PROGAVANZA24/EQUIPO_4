@@ -3,16 +3,16 @@ class tema:
         self.__id_tema=id_tema
         self.__nom=nom 
     def guardar(self):
-        f=open("tema.txt", "w")
+        f=open("temas.txt", "w")
         f.write(f'{str(self.__id_tema)} | {str(self.__nom)}')
         f.close() 
     def ConsultarTodo(cls):
-        f=open("tema.txt")
+        f=open("temas.txt", "r")
         print(f.read())
         f.close()
     def ConsultaID(cls):
         preg=input("Escribe el id que quieres buscar: ")
-        bloc=open("tema.txt")  
+        bloc=open("temas.txt", "r")  
         for formato in bloc:
             datos=formato.strip().split("|")
             if datos[0]==preg:
