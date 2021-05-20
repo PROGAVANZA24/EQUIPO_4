@@ -5,9 +5,7 @@ class empleados:
             self.__dir = dir
         def guardar(self):
             f=open("empleados.txt", "w")
-            f.write (str(self.__id_empleado))
-            f.write (str(self.__nom))
-            f.write (str(self.__dir))
+            f.write(f'{str(self.__id_empleado)} | {str(self.__nom)} | {str(self.__dir)}')
             f.close()
         def ConsultarTodo(cls):
             bloc=open("empleados.txt", "r")
