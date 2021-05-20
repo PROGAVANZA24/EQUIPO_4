@@ -41,3 +41,6 @@ while opcion < 1 or opcion > 6:
             dir = input("Ingresa la dirección del empleado: ")
             data = empleados(id, nombre, dir)
             data.guardar()
+        if accion == 2: #Consultar todo
+            print("ID | Nombre | Dirección")
+            empleados.ConsultarTodo()
