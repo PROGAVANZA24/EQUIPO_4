@@ -5,18 +5,15 @@ class CursoTema:
         self.__id_tema=id_tema
     def guardar(self):
         f=open("cursotema.txt", "w")
-        f.write (str(self.__id_cursotem))
-        f.write (str(self.__id_curso))
-        f.write(str(self.__id_tema))
         f.write(f'{str(self.__id_cursotem)} | {str(self.__id_curso)} | {str(self.__id_tema)}')
         f.close()
     def ConsultarTodo(cls):
-        f=open("cursotema.txt")
+        f=open("cursotema.txt", "r")
         print(f.read())
         f.close()
     def ConsultarID(cls):
         preg=input("Escribe el id que quieres buscar: ")
-        bloc=open("cursotema.txt")
+        bloc=open("cursotema.txt", "r")
         for formato in bloc:
             datos=formato.strip().split("|")
             if datos[0]==preg:
