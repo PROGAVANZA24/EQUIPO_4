@@ -44,3 +44,5 @@ while opcion < 1 or opcion > 6:
         if accion == 2: #Consultar todo
             print("ID | Nombre | Dirección")
             empleados.ConsultarTodo()
+        if accion == 3: #Consultar por ID
+            empleados.ConsultaID()
