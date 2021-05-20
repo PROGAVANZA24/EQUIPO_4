@@ -3,15 +3,15 @@ class CursoTemaVideo:
         self.__id_cursotem = id_cursotem 
         self.__id_cursotemvid = id_cursotemvid
         self.__id_video = id_video
-    def datoscursotemvid(self):
+    def guardar(self):
         f=open("cursotemavideo.txt", "a")
         f.write(f'{str(self.__id_cursotem)} | {str(self.__id_cursotemvid)} | {str(self.__id_video)}\n')
         f.close()
-    def guardar(cls):
+    def ConsultarTodo(cls):
         f=open("cursotemavideo.txt", "r")
         print(f.read())
         f.close()
-    def ConsultarTodo(cls):
+    def ConsultarID(cls):
         preg=input("Escribe el id que quieres buscar: ")
         bloc=open("cursotemavideo.txt", "r")
         for formato in bloc:
