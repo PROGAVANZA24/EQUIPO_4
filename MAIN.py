@@ -55,4 +55,6 @@ while opcion < 1 or opcion > 6:
             data.guardar()
         if accion == 2: #Consultar todo
             print("ID Curso | Descripción | ID Empleado")
-        
+            curso.ConsultarTodo()
+        if accion == 3: #Consultar por ID
+            curso.ConsultaID()
