@@ -11,12 +11,12 @@ class empleados:
             bloc=open("empleados.txt", "r")
             print(bloc.read())
             bloc.close()
-        def ConsultaID(cls):
+        def ConsultaID():
             preg=input("Escribe el id que quieres buscar: ")
             bloc=open("empleados.txt", "r")
             for formato in bloc:
-                datos=formato.strip().split("|")
+                datos=formato.strip().split(" | ")
                 if datos[0]==preg:
-                    print(datos)
+                    print(f'ID: {datos[0]}\nNombre: {datos[1]}\nDirección: {datos[2]}')
             bloc.close()
         
