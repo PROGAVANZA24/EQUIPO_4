@@ -48,9 +48,9 @@ while opcion < 1 or opcion > 6:
             empleados.ConsultaID()
     elif opcion == 1: #Cursos
         if accion == 1: #Guardar datos
-            id = input("Ingresa la id del empleado: ")
-            nombre = input("Ingresa el nombre del empleado: ")
-            dir = input("Ingresa la dirección del empleado: ")
+            id = input("Ingresa la id del curso: ")
+            desc = input("Ingresa la descripción del curso: ")
+            dir = input("Ingresa la empleado del empleado: ")
             data = curso(id, nombre, dir)
             data.guardar()
         if accion == 2: #Consultar todo
