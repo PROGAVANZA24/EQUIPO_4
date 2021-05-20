@@ -1,5 +1,5 @@
 class TEMA: 
-    def _init_(self, id_tema, nom):
+    def __init__(self, id_tema, nom):
         self.__id_tema=id_tema
         self.__nom=nom 
     def guardar(self):
