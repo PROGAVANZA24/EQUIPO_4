@@ -7,11 +7,11 @@ class CursoTema:
         f=open("cursotema.txt", "a")
         f.write(f'{str(self.__id_cursotem)} | {str(self.__id_curso)} | {str(self.__id_tema)}\n')
         f.close()
-    def ConsultarTodo(cls):
+    def ConsultarTodo():
         f=open("cursotema.txt", "r")
         print(f.read())
         f.close()
-    def ConsultarID(cls):
+    def ConsultarID():
         preg=input("Escribe el id que quieres buscar: ")
         bloc=open("cursotema.txt", "r")
         for formato in bloc:
