@@ -63,3 +63,6 @@ while opcion < 1 or opcion > 6:
             id = input("Ingresa la id del tema: ")
             nombre = input("Ingresa el nombre del tema: ")
             data = tema(id, nombre)
+            data.guardar()
+        if accion == 2: #Consultar todo
+            print("ID Tema | Nombre")
